@@ -28,7 +28,12 @@ $partite = [
 ];
 
 for($i = 0; $i < count($partite); $i++){
-    echo $partite[$i]["squadraCasa"] . " " . "-" . " " . $partite[$i]["squadraOspite"] . " " . "|" . " " . $partite[$i]["puntiCasa"] . " " . "-" . " " . $partite[$i]["puntiOspite"] . "<br>";
+    
+    // Stampa con due scritture diverse 
+
+    // echo $partite[$i]["squadraCasa"] . " " . "-" . " " . $partite[$i]["squadraOspite"] . " " . "|" . " " . $partite[$i]["puntiCasa"] . " " . "-" . " " . $partite[$i]["puntiOspite"] . "<br>";
+
+    echo "{$partite[$i]["squadraCasa"]} - {$partite[$i]["squadraOspite"]} | {$partite[$i]["puntiCasa"]} - {$partite[$i]["puntiOspite"]}<br>";
 }
 ?>
 
