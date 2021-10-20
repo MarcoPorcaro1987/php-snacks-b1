@@ -30,7 +30,7 @@ if (!empty($name) && !empty($email) && !empty($age)){
         <h2>Iscrizione</h2>
         <input type="text" name="name" value="" placeholder="Nome">
         <input type="text" name="email" value="" placeholder="Mail">
-        <input type="text" name="age" value="" placeholder="Age">
+        <input type="number" name="age" value="" placeholder="Age">
         <input type="submit" name="submit" value="Invia">
     </form>
     <?php if (!empty($name) && !empty($email) && !empty($age)){ ?>
