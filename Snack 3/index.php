@@ -53,10 +53,10 @@ $posts = [
     </head>
     <body>
     <ul>
-        <?php foreach($posts as $date => $blogs){
+        <?php foreach($posts as $date => $blog){
             echo ("<li>{$date}</li><ul>");
-                foreach($blogs as $blog){
-                    foreach($blog as $key => $value){
+                foreach($blog as $post){
+                    foreach($post as $key => $value){
                         echo("<p><strong>{$key}</strong>: {$value}</p>");
                     }
                 }
