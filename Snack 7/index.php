@@ -33,7 +33,7 @@ function average($array){
     foreach ($array as $item){
         $total += $item;
     };
-    return $total/count($array);	
+    return round($total/count($array), 2);	
 }
 ?>
 
@@ -49,10 +49,9 @@ function average($array){
     <?php 
         foreach($students as $student){
             $voto=average($student['voti']);
-            $averageRounded = ceil($voto);
             echo "<div>
             <h4>{$student['nome']} {$student['cognome']}</h4>
-            <p>Voto Medio: $averageRounded</p>
+            <p>Voto Medio: $voto</p>
             </div>";
         }
     ?>
