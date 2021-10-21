@@ -36,14 +36,16 @@ $db = [
         <title>Snack 6</title>
     </head>
     <body>
-    <?php
-        foreach($db as $category => $workers){
-            echo "<div class='{$category}'> <h2> {$category}</h2>";
-            foreach($workers as $worker){
-                echo "<p>{$worker['name']} {$worker['lastname']}</p>";
+    <div class="container">
+        <?php
+            foreach($db as $category => $workers){
+                echo "<div class='{$category}'> <h2> {$category}</h2>";
+                foreach($workers as $worker){
+                    echo "<p>{$worker['name']} {$worker['lastname']}</p>";
+                }
+                echo "</div>";
             }
-            echo "</div>";
-        }
-    ?>
+        ?>
+    </div>
     </body>
 </html>

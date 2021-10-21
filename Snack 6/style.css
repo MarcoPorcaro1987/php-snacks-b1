@@ -8,12 +8,18 @@ h2 {
     margin-bottom: .625rem;
 }
 
+.container {
+    display: flex;
+}
 .teachers {
     background-color: darkgray;
     padding: 1.25rem;
+    width: 30%;
 }
 
 .pm {
     background-color: darkgreen;
     padding: 1.25rem;
+    width: 30%;
+
 }
